@@ -1,0 +1,111 @@
+---
+// Navbar.astro
+---
+
+<header class="fixed top-0 left-0 z-50 w-full bg-brand-cream/90 backdrop-blur-md border-b border-stone-200/50 shadow-sm transition-all duration-300" id="main-header">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex h-20 items-center justify-between">
+      
+      <div class="flex flex-col z-50">
+        <a href="/" class="text-2xl font-bold text-stone-800 tracking-tight font-serif hover:text-brand-sandDark transition-colors">
+          Estudio Jurídico JR
+        </a>
+        <span class="text-[10px] md:text-xs text-stone-500 font-medium tracking-widest uppercase">
+          Dra. M. Josefina Rusconi
+        </span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600 font-sans">
+        
+        <a href="#inicio" class="relative group py-1 transition-colors hover:text-brand-sandDark">
+          <span>Inicio</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-sand transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#perfil" class="relative group py-1 transition-colors hover:text-brand-sandDark">
+          <span>Perfil</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-sand transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#areas" class="relative group py-1 transition-colors hover:text-brand-sandDark">
+          <span>Servicios</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-sand transition-all duration-300 group-hover:w-full"></span>
+        </a>
+
+        <a href="#contacto" class="relative group py-1 transition-colors hover:text-brand-sandDark">
+          <span>Ubicación</span>
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-sand transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        
+        <a href="https://wa.me/5493471000000" target="_blank" class="inline-flex items-center justify-center rounded-full bg-brand-sand px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-brand-sandDark transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+          Contacto
+        </a>
+      </nav>
+
+      <div class="flex md:hidden z-50">
+        <button id="mobile-menu-btn" type="button" class="group relative w-12 h-12 focus:outline-none" aria-label="Abrir menú">
+          <div class="absolute left-1/2 top-1/2 w-6 h-5 -translate-x-1/2 -translate-y-1/2">
+            <span class="hamburger-line absolute top-0 left-0 w-full h-0.5 bg-stone-800 rounded-full transition-all duration-300 ease-in-out origin-center"></span>
+            <span class="hamburger-line absolute top-1/2 -translate-y-1/2 left-0 w-full h-0.5 bg-stone-800 rounded-full transition-all duration-300 ease-in-out"></span>
+            <span class="hamburger-line absolute bottom-0 left-0 w-full h-0.5 bg-stone-800 rounded-full transition-all duration-300 ease-in-out origin-center"></span>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-brand-cream border-b border-stone-200 shadow-xl origin-top animate-in slide-in-from-top-5 duration-300 h-[calc(100vh-5rem)]">
+    <div class="flex flex-col p-6 gap-2">
+      <a href="#inicio" class="text-lg font-medium text-stone-800 border-b border-stone-200/50 py-4 hover:text-brand-sandDark hover:pl-2 transition-all duration-300">Inicio</a>
+      <a href="#perfil" class="text-lg font-medium text-stone-800 border-b border-stone-200/50 py-4 hover:text-brand-sandDark hover:pl-2 transition-all duration-300">Perfil Profesional</a>
+      <a href="#areas" class="text-lg font-medium text-stone-800 border-b border-stone-200/50 py-4 hover:text-brand-sandDark hover:pl-2 transition-all duration-300">Áreas de Práctica</a>
+      <a href="#contacto" class="text-lg font-medium text-stone-800 border-b border-stone-200/50 py-4 hover:text-brand-sandDark hover:pl-2 transition-all duration-300">Ubicación y Contacto</a>
+      
+      <a href="https://wa.me/5493471000000" target="_blank" class="mt-8 flex w-full items-center justify-center rounded-lg bg-brand-sand px-4 py-4 text-base font-semibold text-white shadow-sm hover:bg-brand-sandDark transition-colors">
+        Enviar WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* ANIMACIÓN DE CRUZ PERFECTA */
+  :global(.menu-active) .hamburger-line:nth-child(1) {
+    top: 50% !important;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  :global(.menu-active) .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  :global(.menu-active) .hamburger-line:nth-child(3) {
+    bottom: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+</style>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const links = menu ? menu.querySelectorAll('a') : [];
+
+  if (btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      btn.classList.toggle('menu-active');
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', (!isExpanded).toString());
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        btn.classList.remove('menu-active');
+      });
+    });
+  }
+</script>

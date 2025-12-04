@@ -1,0 +1,449 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<Layout title="Estudio Jurídico JR | Dra. Josefina Rusconi">
+  
+  <Navbar />
+
+  <section id="inicio" class="relative pt-12 pb-20 lg:pt-28 lg:pb-32 overflow-hidden bg-brand-cream">
+    <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-brand-peach/50 rounded-full blur-3xl -z-10"></div>
+    <div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[400px] h-[400px] bg-brand-stone/30 rounded-full blur-3xl -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <div>
+          <span class="inline-block py-1 px-4 rounded-full text-brand-sand border border-stone-100 text-brand-sand-dark text-xs font-bold tracking-wider uppercase mb-6 shadow-sm font-sans">
+             Visión Integral 360°
+          </span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-800 font-serif leading-[1.1] mb-6">
+            Solidez jurídica con <br>
+            <span class="text-brand-sand italic">calidez humana.</span>
+          </h1>
+          <p class="text-lg text-stone-600 leading-relaxed mb-8 max-w-lg font-sans">
+            Combinamos la abogacía, la escribanía y la gestión empresarial para brindarte seguridad en cada paso. Atención personalizada en <strong>Rosario y Cañada de Gómez</strong>.
+          </p>
+  
+          <div class="flex flex-col sm:flex-row gap-4 font-sans">
+            <a href="#contacto" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white transition-all bg-brand-sand rounded-lg hover:bg-brand-sand-dark shadow-sm hover:shadow-md hover:-translate-y-0.5">
+              Agendar Consulta
+            </a>
+            <a href="#areas" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-stone-600 transition-all bg-white border border-stone-200 rounded-lg hover:bg-stone-50 hover:text-stone-900">
+              Ver Servicios
+            </a>
+          </div>
+          
+          <div class="mt-10 pt-8 border-t border-stone-200/60 flex flex-wrap items-center gap-6 text-sm text-stone-500 font-medium font-sans">
+             <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <span>Atención Online y Presencial</span>
+             </div>
+             <div class="flex items-center gap-2">
+                <span>⭐ 5.0 en Google Maps</span>
+             </div>
+          </div>
+        </div>
+  
+        <div class="relative">
+          <div class="absolute inset-0 border-2 border-brand-sand/20 rounded-[2rem] transform translate-x-4 translate-y-4 -z-10"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1469" 
+            alt="Dra. María Josefina Rusconi" 
+            class="rounded-[2rem] shadow-xl object-cover w-full h-[500px] lg:h-[600px] bg-stone-200"
+          />
+          <div class="absolute bottom-8 left-0 right-0 mx-auto w-max bg-brand-cream backdrop-blur px-6 py-3 rounded-xl shadow-lg border border-white/50">
+             <p class="text-brand-sand font-serif font-semibold">Dra. M. Josefina Rusconi</p>
+             <p class="text-xs text-black Dark uppercase tracking-wide text-center font-sans">Directora</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="perfil" class="py-24 bg-white relative overflow-hidden">
+  
+  <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-sand/30 to-transparent"></div>
+  <div class="absolute -left-20 top-40 w-64 h-64 bg-brand-peach/40 rounded-full blur-3xl -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      
+      <div class="lg:col-span-5 relative">
+        <div class="absolute inset-0 border border-brand-sand/30 translate-x-3 translate-y-3 rounded-2xl -z-10"></div>
+        
+        <div class="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg group">
+          <img 
+            src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=1470&auto=format&fit=crop" 
+            alt="Dra. María Josefina Rusconi" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          
+          <div class="absolute bottom-0 left-0 w-full bg-brand-cream/95 backdrop-blur-sm p-4 border-t border-brand-sand/20">
+            <p class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold mb-1">Matrículas Habilitantes</p>
+            <div class="flex gap-4 text-xs font-medium text-stone-700">
+              <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-brand-sand"></span> Tº 123 Fº 456 (CSF)</span>
+              <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-brand-sand"></span> Escribanía Reg. Nº 99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <span class="text-brand-sand-dark font-bold tracking-widest uppercase text-xs mb-2 block">Sobre Mí</span>
+        
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 font-serif mb-6 leading-tight">
+          Más que una asesora legal, <br>
+          <span class="italic text-brand-sand">una aliada estratégica.</span>
+        </h2>
+
+        <div class="space-y-6 text-stone-600 font-sans leading-relaxed">
+          <p>
+            Soy <strong>María Josefina Rusconi</strong>. Mi carrera comenzó con la convicción de que el derecho no debe ser un obstáculo rígido, sino una herramienta dinámica para proteger patrimonios, familias y negocios.
+          </p>
+          <p>
+            Al combinar mi formación como <strong>Abogada</strong> y <strong>Escribana</strong>, ofrezco algo que pocos profesionales pueden brindar: una visión completa de punta a punta. Desde la estrategia del conflicto hasta la formalización notarial de la solución.
+          </p>
+          <p>
+            Además, mi diplomatura en <strong>Gestión de PyMEs 4.0</strong> me permite entender el lenguaje de los emprendedores y empresarios modernos, brindando soluciones ágiles en un mundo digital.
+          </p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3">
+            <div class="mt-1 w-5 h-5 rounded-full bg-brand-peach flex items-center justify-center text-brand-sand-dark text-xs">✓</div>
+            <p class="text-sm text-stone-700"><strong>Visión 360°:</strong> Legal + Notarial.</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="mt-1 w-5 h-5 rounded-full bg-brand-peach flex items-center justify-center text-brand-sand-dark text-xs">✓</div>
+            <p class="text-sm text-stone-700"><strong>Empatía:</strong> Trato humano y cercano.</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="mt-1 w-5 h-5 rounded-full bg-brand-peach flex items-center justify-center text-brand-sand-dark text-xs">✓</div>
+            <p class="text-sm text-stone-700"><strong>Actualización:</strong> Gestión 4.0.</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="mt-1 w-5 h-5 rounded-full bg-brand-peach flex items-center justify-center text-brand-sand-dark text-xs">✓</div>
+            <p class="text-sm text-stone-700"><strong>Flexibilidad:</strong> Online y Presencial.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 flex items-center gap-6 border-t border-stone-100 pt-8">
+          <div>
+            <p class="font-serif text-lg text-stone-800 italic">"Mi objetivo es tu tranquilidad jurídica."</p>
+            <p class="text-xs text-stone-500 mt-1 uppercase tracking-wider">— Dra. Rusconi</p>
+          </div>
+          
+          <a href="#contacto" class="ml-auto text-sm font-semibold text-brand-sand-dark hover:text-stone-800 transition-colors flex items-center gap-2 group">
+            Iniciar una consulta
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-brand-cream relative overflow-hidden">
+  
+  <div class="absolute right-0 bottom-0 w-1/3 h-full bg-gradient-to-l from-white/40 to-transparent pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-brand-sand-dark font-bold tracking-widest uppercase text-xs mb-3 block">Paso a Paso</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-stone-800 font-serif mb-6">
+        Simplificamos lo complejo
+      </h2>
+      <p class="text-stone-600 text-lg font-sans">
+        Entendemos que los temas legales generan ansiedad. Por eso, diseñamos un proceso claro y transparente para acompañarte desde la primera consulta hasta la solución.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+      
+      <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-brand-sand/30 to-transparent -z-10 border-t-2 border-dashed border-brand-sand/30"></div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 relative group hover:-translate-y-2 transition-transform duration-300">
+        <div class="w-12 h-12 bg-brand-peach rounded-full flex items-center justify-center text-brand-sand-dark font-serif font-bold text-xl mb-6 mx-auto group-hover:bg-brand-sand group-hover:text-white transition-colors">
+          1
+        </div>
+        <h3 class="text-xl font-bold text-stone-800 font-serif mb-3 text-center">Consulta & Diagnóstico</h3>
+        <p class="text-stone-600 text-sm leading-relaxed text-center">
+          Agendamos una reunión (presencial u online). Te escucho, revisamos la documentación y realizamos un primer diagnóstico de la situación legal o notarial.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 relative group hover:-translate-y-2 transition-transform duration-300">
+        <div class="w-12 h-12 bg-brand-stone rounded-full flex items-center justify-center text-brand-sand-dark font-serif font-bold text-xl mb-6 mx-auto group-hover:bg-brand-sand group-hover:text-white transition-colors">
+          2
+        </div>
+        <h3 class="text-xl font-bold text-stone-800 font-serif mb-3 text-center">Estrategia Integral</h3>
+        <p class="text-stone-600 text-sm leading-relaxed text-center">
+          Diseño una hoja de ruta a medida. Gracias a mi perfil mixto, evaluamos si la solución es un litigio, una mediación o un trámite notarial rápido.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 relative group hover:-translate-y-2 transition-transform duration-300">
+        <div class="w-12 h-12 bg-brand-light-green rounded-full flex items-center justify-center text-brand-sand-dark font-serif font-bold text-xl mb-6 mx-auto group-hover:bg-brand-sand group-hover:text-white transition-colors">
+          3
+        </div>
+        <h3 class="text-xl font-bold text-stone-800 font-serif mb-3 text-center">Ejecución & Solución</h3>
+        <p class="text-stone-600 text-sm leading-relaxed text-center">
+          Ponemos en marcha el plan. Te mantengo informado/a de cada avance vía WhatsApp o mail, hasta lograr la resolución del conflicto o trámite.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="mt-16 text-center">
+      <div class="inline-flex flex-col sm:flex-row items-center gap-4 bg-white p-2 pr-6 rounded-full shadow-sm border border-stone-100">
+        <span class="bg-brand-sand/10 text-brand-sand-dark text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">¿Empezamos?</span>
+        <p class="text-stone-600 text-sm font-medium">El primer paso es contarnos tu caso.</p>
+        <a href="https://wa.me/5493471000000" class="flex items-center gap-2 text-brand-sand-dark font-bold text-sm hover:text-stone-800 transition-colors">
+          Enviar mensaje <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section id="perfil" class="py-24 bg-white font-sans">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-800 font-serif mb-6">Un enfoque multidisciplinario</h2>
+          <p class="text-lg text-stone-600 leading-relaxed">
+              En un mundo complejo, las soluciones únicas no alcanzan. Mi formación integral me permite abordar tu caso desde lo legal, lo notarial y lo estratégico.
+          </p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="group bg-brand-cream border border-stone-100 p-6 rounded-2xl text-center hover:shadow-md transition-all hover:-translate-y-1">
+              <div class="w-14 h-14 mx-auto bg-brand-peach rounded-full flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">⚖️</div>
+              <h3 class="text-lg font-bold text-stone-800 font-serif mb-2">Abogada</h3>
+              <p class="text-sm text-stone-500">Defensa de derechos, litigios y asesoramiento preventivo.</p>
+          </div>
+          <div class="group bg-brand-cream border border-stone-100 p-6 rounded-2xl text-center hover:shadow-md transition-all hover:-translate-y-1">
+              <div class="w-14 h-14 mx-auto bg-brand-stone rounded-full flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">📜</div>
+              <h3 class="text-lg font-bold text-stone-800 font-serif mb-2">Escribana</h3>
+              <p class="text-sm text-stone-500">Seguridad jurídica, actas, poderes y certificaciones.</p>
+          </div>
+          <div class="group bg-brand-cream border border-stone-100 p-6 rounded-2xl text-center hover:shadow-md transition-all hover:-translate-y-1">
+              <div class="w-14 h-14 mx-auto bg-brand-light-green rounded-full flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🤝</div>
+              <h3 class="text-lg font-bold text-stone-800 font-serif mb-2">Mediadora</h3>
+              <p class="text-sm text-stone-500">Resolución pacífica y efectiva de conflictos.</p>
+          </div>
+          <div class="group bg-brand-cream border border-stone-100 p-6 rounded-2xl text-center hover:shadow-md transition-all hover:-translate-y-1">
+               <div class="w-14 h-14 mx-auto bg-brand-peach rounded-full flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🚀</div>
+              <h3 class="text-lg font-bold text-stone-800 font-serif mb-2">Gestión PyMEs</h3>
+              <p class="text-sm text-stone-500">Diplomatura en gestión 4.0 para empresas modernas.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" class="py-24 bg-brand-cream font-sans">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-sand-dark font-semibold tracking-wide uppercase text-sm mb-2 block">Nuestras Especialidades</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 font-serif">
+          Soluciones a tu medida
+        </h2>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-lg hover:border-brand-sand/30 transition-all group">
+            <div class="w-12 h-12 bg-brand-peach rounded-lg flex items-center justify-center text-brand-sand-dark mb-6 group-hover:bg-brand-sand group-hover:text-white transition-colors">
+                👨‍👩‍👧‍👦
+            </div>
+            <h3 class="text-xl font-bold text-stone-800 mb-3 font-serif">Familia y Sucesiones</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Acompañamiento sensible en divorcios, cuotas alimentarias, regímenes de comunicación y procesos sucesorios.</p>
+             <a href="#contacto" class="text-sm font-semibold text-brand-sand-dark hover:underline decoration-brand-sand/30">Consultar →</a>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-lg hover:border-brand-sand/30 transition-all group">
+            <div class="w-12 h-12 bg-brand-stone rounded-lg flex items-center justify-center text-brand-sand-dark mb-6 group-hover:bg-brand-sand group-hover:text-white transition-colors">
+                👵
+            </div>
+            <h3 class="text-xl font-bold text-stone-800 mb-3 font-serif">Derecho Previsional</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Asesoramiento y gestión de jubilaciones y pensiones. Planificación de tu futuro retiro.</p>
+            <a href="#contacto" class="text-sm font-semibold text-brand-sand-dark hover:underline decoration-brand-sand/30">Consultar →</a>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-lg hover:border-brand-sand/30 transition-all group">
+            <div class="w-12 h-12 bg-brand-light-green rounded-lg flex items-center justify-center text-brand-sand-dark mb-6 group-hover:bg-brand-sand group-hover:text-white transition-colors">
+                💼
+            </div>
+            <h3 class="text-xl font-bold text-stone-800 mb-3 font-serif">Derecho Laboral</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Defensa de derechos del trabajador y asesoramiento preventivo a empleadores. Despidos y acuerdos.</p>
+            <a href="#contacto" class="text-sm font-semibold text-brand-sand-dark hover:underline decoration-brand-sand/30">Consultar →</a>
+        </div>
+
+         <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-lg hover:border-brand-sand/30 transition-all group relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-brand-sand text-white text-[10px] uppercase font-bold px-3 py-1 rounded-bl-lg tracking-wide">Destacado</div>
+            <div class="w-12 h-12 bg-brand-peach rounded-lg flex items-center justify-center text-brand-sand-dark mb-6 group-hover:bg-brand-sand group-hover:text-white transition-colors">
+                🚀
+            </div>
+            <h3 class="text-xl font-bold text-stone-800 mb-3 font-serif">Empresarial y PyMEs</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Asesoramiento integral para negocios. Desde la constitución de sociedades hasta la gestión 4.0 y compliance.</p>
+            <a href="#contacto" class="text-sm font-semibold text-brand-sand-dark hover:underline decoration-brand-sand/30">Consultar →</a>
+        </div>
+
+         <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-lg hover:border-brand-sand/30 transition-all group">
+            <div class="w-12 h-12 bg-brand-stone rounded-lg flex items-center justify-center text-brand-sand-dark mb-6 group-hover:bg-brand-sand group-hover:text-white transition-colors">
+                📝
+            </div>
+            <h3 class="text-xl font-bold text-stone-800 mb-3 font-serif">Contratos</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Redacción y revisión de contratos civiles y comerciales para brindar máxima seguridad jurídica.</p>
+            <a href="#contacto" class="text-sm font-semibold text-brand-sand-dark hover:underline decoration-brand-sand/30">Consultar →</a>
+        </div>
+
+         <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-lg hover:border-brand-sand/30 transition-all group">
+            <div class="w-12 h-12 bg-brand-light-green rounded-lg flex items-center justify-center text-brand-sand-dark mb-6 group-hover:bg-brand-sand group-hover:text-white transition-colors">
+                ✒️
+            </div>
+            <h3 class="text-xl font-bold text-stone-800 mb-3 font-serif">Escribanía</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">Certificación de firmas, poderes, actas notariales y formalización de actos jurídicos.</p>
+            <a href="#contacto" class="text-sm font-semibold text-brand-sand-dark hover:underline decoration-brand-sand/30">Consultar →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-24 bg-white border-t border-stone-100 font-sans relative overflow-hidden">
+  
+  <div class="absolute -right-20 top-20 w-96 h-96 bg-brand-cream rounded-full blur-3xl -z-10"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      
+      <div>
+        <span class="text-brand-sandDark font-bold tracking-widest uppercase text-xs mb-3 block">Hablemos</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 font-serif mb-6">
+          ¿Listo para resolver tu consulta?
+        </h2>
+        <p class="text-stone-600 text-lg mb-10 leading-relaxed">
+          Ya sea para una gestión notarial rápida o una estrategia legal compleja, estoy para asesorarte. Podés visitarme en mis oficinas o coordinar una videollamada.
+        </p>
+
+        <div class="space-y-6">
+          
+          <div class="group flex gap-5 p-6 rounded-2xl border border-stone-100 bg-brand-cream hover:border-brand-sand/30 transition-colors">
+            <div class="shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-sandDark shadow-sm text-xl group-hover:scale-110 transition-transform">
+              📍
+            </div>
+            <div>
+              <h3 class="font-bold text-stone-800 font-serif text-lg">Cañada de Gómez</h3>
+              <p class="text-sm text-stone-500 mt-1">Av. Santa Fe 1234, Piso 1. (Ejemplo)</p>
+              <p class="text-xs text-brand-sandDark font-medium mt-2 uppercase tracking-wide">Sede Central</p>
+            </div>
+          </div>
+
+          <div class="group flex gap-5 p-6 rounded-2xl border border-stone-100 bg-white hover:border-brand-sand/30 hover:bg-brand-cream/30 transition-colors">
+            <div class="shrink-0 w-12 h-12 bg-brand-cream rounded-full flex items-center justify-center text-brand-sandDark shadow-sm text-xl group-hover:scale-110 transition-transform">
+              🏢
+            </div>
+            <div>
+              <h3 class="font-bold text-stone-800 font-serif text-lg">Rosario</h3>
+              <p class="text-sm text-stone-500 mt-1">Bv. Oroño 500, Oficina 4B. (Ejemplo)</p>
+              <p class="text-xs text-stone-400 font-medium mt-2 uppercase tracking-wide">Con cita previa</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-6">
+          <a href="mailto:contacto@estudiojr.com.ar" class="flex items-center gap-3 text-stone-600 hover:text-brand-sandDark transition-colors">
+            <span class="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center text-lg">✉️</span>
+            <span class="font-medium">contacto@estudiojr.com.ar</span>
+          </a>
+          <a href="https://wa.me/5493471000000" class="flex items-center gap-3 text-stone-600 hover:text-brand-sandDark transition-colors">
+            <span class="w-10 h-10 rounded-full bg-stone-50 flex items-center justify-center text-lg">📱</span>
+            <span class="font-medium">+54 9 3471 ...</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="relative h-full min-h-[400px] lg:min-h-auto rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+        <a href="https://goo.gl/maps/TU_LINK_AQUI" target="_blank" class="group block w-full h-full relative">
+            <img 
+              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1474" 
+              alt="Mapa de ubicación" 
+              class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+            />
+            
+            <div class="absolute inset-0 bg-stone-900/10 group-hover:bg-transparent transition-colors"></div>
+            
+            <div class="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-lg border border-white/50">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="font-serif font-bold text-stone-800 text-lg">¿Cómo llegar?</p>
+                  <p class="text-xs text-stone-500">Tocá para ver en Google Maps</p>
+                </div>
+                <div class="w-10 h-10 bg-brand-sand rounded-full flex items-center justify-center text-white shadow-md group-hover:bg-brand-sandDark transition-colors">
+                  ↗
+                </div>
+              </div>
+            </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer id="contacto" class="bg-stone-900 text-stone-300 font-sans py-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold text-brand-cream font-serif mb-6">Estudio Jurídico JR</h3>
+                <p class="text-sm text-stone-400 leading-relaxed max-w-xs">
+                    Dra. María Josefina Rusconi. <br> 
+                    Abogada, Escribana y Mediadora. <br>
+                    Compromiso y visión integral para tus asuntos legales.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-6">Ubicación</h4>
+                <ul class="space-y-4 text-sm text-stone-400">
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-sand">📍</span>
+                        <span>Cañada de Gómez, Santa Fe.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-sand">📍</span>
+                        <span>Rosario, Santa Fe.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-6">Contacto Directo</h4>
+                <ul class="space-y-4 text-sm text-stone-400">
+                    <li class="flex items-center gap-3">
+                        <span class="text-brand-sand">✉️</span>
+                        <a href="mailto:contacto@estudiojr.com.ar" class="hover:text-white transition-colors">contacto@estudiojr.com.ar</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="text-brand-sand">📱</span>
+                        <a href="https://wa.me/5493471000000" class="hover:text-white transition-colors font-medium">WhatsApp: +54 9 3471 ...</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-stone-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-stone-600 gap-4">
+            <p>© 2025 Estudio Jurídico JR. Todos los derechos reservados.</p>
+            <p>Diseño web por <a href="#" class="text-stone-500 hover:text-brand-sand transition-colors font-semibold">VisionPath</a></p>
+        </div>
+    </div>
+  </footer>
+</Layout>

@@ -1,0 +1,50 @@
+/* 1. IMPORTAR FUENTES DE GOOGLE FONTS (¡Muy Importante!) */
+/* Aquí puse DM Sans y Space Grotesk como pediste, pero ojo con el estilo tech */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* 2. IMPORTAR TAILWIND (Sintaxis v4) */
+@import "tailwindcss";
+
+/* 3. CONFIGURAR TEMA */
+@theme {
+  /* Tipografías */
+  --font-sans: "DM Sans", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif; /* Ojo: Esta fuente es muy "Tech/Futurista" */
+
+  /* Paleta de Colores (Josefina) */
+  --color-brand-cream: #FFFBF5;
+  --color-brand-sand: #D4A373;
+  --color-brand-sand-dark: #C39262;
+  --color-brand-light-green: #D8E2DC;
+  --color-brand-peach: #FAE1DD;
+  --color-brand-stone: #EAD2AC;
+  --color-brand-green: #D8E2DC;
+}
+
+/* 4. ESTILOS BASE */
+/* Usamos las variables definidas arriba para configurar el body */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-brand-cream);
+  color: #44403c; /* Un gris piedra oscuro (stone-700) para el texto base */
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Selección de texto personalizada */
+::selection {
+  background-color: var(--color-brand-sand);
+  color: white;
+}
+
+/* Utilidad para ocultar scrollbar (opcional) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
